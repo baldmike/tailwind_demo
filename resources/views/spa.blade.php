@@ -11,6 +11,11 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     </head>
     <body>
-
+        <div id="app"> 
+            <router-view></router-view>
+        </div>
+        
+        <script>window.laravel = { csrfToken: '{{ csrf_token() }}' }</script>
+        <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>
