@@ -47,25 +47,25 @@
                     <p>Funky BoBo</p>
                 </button>
 
-                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-green-700">
+                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-yellow-200 hover:text-gray-900">
                     <p>Dang Hots</p>
                 </button>
 
-                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-200">
+                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-200 hover:text-gray-900">
                     <p>Banana Stand</p>
                 </button>
             </div>
 
             <div class="flex justify-around">
-                <button class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full hover:bg-purple-700">
+                <button class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full hover:bg-purple-700 outline-none">
                     <p>Funky BoBo</p>
                 </button>
 
-                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-yellow-700">
+                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-yellow-700 outline-none">
                     <p>Dang Hots</p>
                 </button>
 
-                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-700">
+                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-700 focus:outline-none">
                     <p>Banana Stand</p>
                 </button>
             </div>
