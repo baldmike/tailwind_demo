@@ -14,14 +14,60 @@
         <div id="app"> 
             <router-view></router-view>
 
-            <div class="inline-flex">
-                <div class="w-36 p-4 m-6 rounded border-blue-800 bg-black text-white align-middle text-center">
-                    <p>Funky Bo Bo</p>
+            <div class="flex justify-around">
+                <div class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full">
+                    <p>Funky BoBo</p>
                 </div>
 
-                <div class="m-2 p-2 bg-red-600 text-white text-center rounded-3xl">
-                    <p>Hot Dog Stand</p>
+                <div class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full">
+                    <p>Dang Hots</p>
                 </div>
+
+                <div class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full">
+                    <p>Banana Stand</p>
+                </div>
+            </div>
+
+            <div class="flex justify-around">
+                <div class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full">
+                    <p>Funky BoBo</p>
+                </div>
+
+                <div class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full">
+                    <p>Dang Hots</p>
+                </div>
+
+                <div class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full">
+                    <p>Banana Stand</p>
+                </div>
+            </div>
+
+            <div class="flex justify-around">
+                <button class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full hover:bg-gray-700">
+                    <p>Funky BoBo</p>
+                </button>
+
+                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-green-700">
+                    <p>Dang Hots</p>
+                </button>
+
+                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-200">
+                    <p>Banana Stand</p>
+                </button>
+            </div>
+
+            <div class="flex justify-around">
+                <button class="w-80 m-10 p-10  bg-green-600 text-white text-center rounded-full hover:bg-purple-700">
+                    <p>Funky BoBo</p>
+                </button>
+
+                <button class="w-80 m-10 p-10 bg-red-600 text-white text-center rounded-full hover:bg-yellow-700">
+                    <p>Dang Hots</p>
+                </button>
+
+                <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-700">
+                    <p>Banana Stand</p>
+                </button>
             </div>
         </div>
         
