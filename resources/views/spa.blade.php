@@ -14,13 +14,13 @@
         <div id="app"> 
             <router-view></router-view>
 
-            <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-                <div class="flex-shrink-0">
-                    <img class="h-12 w-12" src="/img/logo.svg" alt="ChitChat Logo">
+            <div class="inline-flex">
+                <div class="w-36 p-4 m-6 rounded border-blue-800 bg-black text-white align-middle text-center">
+                    <p>Funky Bo Bo</p>
                 </div>
-                <div>
-                    <div class="text-xl font-medium text-black">ChitChat</div>
-                    <p class="text-gray-500">You have a new message!</p>
+
+                <div class="m-2 p-2 bg-red-600 text-white text-center rounded-3xl">
+                    <p>Hot Dog Stand</p>
                 </div>
             </div>
         </div>
