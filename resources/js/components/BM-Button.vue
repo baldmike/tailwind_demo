@@ -5,7 +5,7 @@
 </template>
 
 <script>
-export default {
-    name: "buzzon"
-}
+    export default {
+        name: "bm-button"
+    }
 </script>

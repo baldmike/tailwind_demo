@@ -1,16 +1,16 @@
 <template> 
-    <buzzon></buzzon>
+    <bm-button></bm-button>
 </template>
 
 <script>
-
-import Buzzon from './components/Buzzon.vue'
+import BmButton from './components/BM-Button.vue'
 
     export default {
+  components: { BmButton },
         name: "mainApp",
 
         components: {
-            Buzzon
+            BmButton
         }
     }
 </script>
