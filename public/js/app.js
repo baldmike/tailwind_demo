@@ -1851,6 +1851,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "bm-button"
 });
@@ -1869,21 +1877,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _components_BM_Button_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/BM-Button.vue */ "./resources/js/components/BM-Button.vue");
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
 //
 //
 //
 //
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_defineProperty({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  name: "mainApp",
   components: {
     BmButton: _components_BM_Button_vue__WEBPACK_IMPORTED_MODULE_0__.default
-  },
-  name: "mainApp"
-}, "components", {
-  BmButton: _components_BM_Button_vue__WEBPACK_IMPORTED_MODULE_0__.default
-}));
+  }
+});
 
 /***/ }),
 
@@ -19578,14 +19582,25 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "button",
-      {
-        staticClass:
-          "w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-700 focus:outline-none"
-      },
-      [_c("p", [_vm._v("Banana Stand")])]
-    )
+    return _c("div", { staticClass: "flex items-stretch" }, [
+      _c(
+        "button",
+        {
+          staticClass:
+            "w-40 m-5 p-2 bg-blue-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
+        },
+        [_c("p", [_vm._v("submit")])]
+      ),
+      _vm._v(" "),
+      _c(
+        "button",
+        {
+          staticClass:
+            "w-40 m-5 p-2 bg-blue-200 text-black text-center \nrounded-full border border-black hover:bg-red-600 hover:text-white focus:outline-none"
+        },
+        [_c("p", [_vm._v("cancel")])]
+      )
+    ])
   }
 ]
 render._withStripped = true

@@ -1,7 +1,15 @@
 <template>
-    <button class="w-80 m-10 p-10 bg-yellow-300 text-white text-center rounded-full hover:bg-blue-700 focus:outline-none">
-        <p>Banana Stand</p>
+    <div class="flex items-stretch">
+        <button class="w-40 m-5 p-2 bg-blue-200 text-black text-center 
+    rounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none">
+        <p>submit</p>
     </button>
+
+    <button class="w-40 m-5 p-2 bg-blue-200 text-black text-center 
+    rounded-full border border-black hover:bg-red-600 hover:text-white focus:outline-none">
+        <p>cancel</p>
+    </button>
+    </div>
 </template>
 
 <script>
