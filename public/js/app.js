@@ -1856,9 +1856,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "bm-button"
 });
@@ -19590,15 +19587,6 @@ var staticRenderFns = [
             "w-40 m-5 p-2 bg-blue-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
         },
         [_c("p", [_vm._v("submit")])]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass:
-            "w-40 m-5 p-2 bg-blue-200 text-black text-center \nrounded-full border border-black hover:bg-red-600 hover:text-white focus:outline-none"
-        },
-        [_c("p", [_vm._v("cancel")])]
       )
     ])
   }
