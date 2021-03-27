@@ -19584,7 +19584,7 @@ var staticRenderFns = [
         "button",
         {
           staticClass:
-            "w-40 m-5 p-2 bg-blue-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
+            "w-40 h-12 m-5 p-2 bg-yellow-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
         },
         [_c("p", [_vm._v("submit")])]
       )
