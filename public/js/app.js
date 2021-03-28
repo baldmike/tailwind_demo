@@ -19572,25 +19572,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "flex items-stretch" }, [
+    _c(
+      "button",
+      {
+        staticClass:
+          "w-40 h-12 m-5 p-2 bg-yellow-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
+      },
+      [_vm._t("default")],
+      2
+    )
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex items-stretch" }, [
-      _c(
-        "button",
-        {
-          staticClass:
-            "w-40 h-12 m-5 p-2 bg-yellow-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
-        },
-        [_c("p", [_vm._v("submit")])]
-      )
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -19613,7 +19607,7 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("bm-button")
+  return _c("bm-button", [_vm._v("Slotted in!")])
 }
 var staticRenderFns = []
 render._withStripped = true

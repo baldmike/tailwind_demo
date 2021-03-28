@@ -1,5 +1,5 @@
 <template> 
-    <bm-button></bm-button>
+    <bm-button>Slotted in!</bm-button>
 </template>
 
 <script>
