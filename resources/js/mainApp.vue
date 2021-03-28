@@ -1,8 +1,6 @@
 <template> 
     <div class="container">
-        <bm-button @click.native.prevent="funkyTime()">Slotted in</bm-button>
-
-        <bm-button v-if="funky" @click.native.prevent="funkyTime()">Toggle On</bm-button>
+        <router-view/>
     </div>
     
 </template>
