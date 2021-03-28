@@ -1852,10 +1852,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "bm-button"
 });
@@ -19588,17 +19584,15 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "flex items-stretch" }, [
-    _c(
-      "button",
-      {
-        staticClass:
-          "w-40 h-12 m-5 p-2 bg-yellow-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
-      },
-      [_vm._t("default")],
-      2
-    )
-  ])
+  return _c(
+    "button",
+    {
+      staticClass:
+        "w-40 h-12 m-5 p-2 bg-yellow-200 text-black text-center \nrounded-full border border-black hover:bg-green-500 hover:text-white focus:outline-none"
+    },
+    [_vm._t("default")],
+    2
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
