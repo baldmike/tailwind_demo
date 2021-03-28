@@ -1,5 +1,10 @@
 <template> 
-    <bm-button>Slotted in!</bm-button>
+    <div class="container">
+        <bm-button @click.native.prevent="funkyTime()">Slotted in</bm-button>
+
+        <bm-button v-if="funky" @click.native.prevent="funkyTime()">Toggle On</bm-button>
+    </div>
+    
 </template>
 
 <script>
@@ -10,6 +15,19 @@ import BmButton from './components/BM-Button.vue'
 
         components: {
             BmButton
+        },
+
+        data() {
+            return {
+                funky: false,
+            }
+        },
+
+        methods: {
+            funkyTime() {
+                this.funky = !this.funky;
+                console.log(this.funky);
+            }
         }
     }
 </script>

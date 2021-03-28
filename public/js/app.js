@@ -1878,11 +1878,27 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   name: "mainApp",
   components: {
     BmButton: _components_BM_Button_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  },
+  data: function data() {
+    return {
+      funky: false
+    };
+  },
+  methods: {
+    funkyTime: function funkyTime() {
+      this.funky = !this.funky;
+      console.log(this.funky);
+    }
   }
 });
 
@@ -19607,7 +19623,40 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("bm-button", [_vm._v("Slotted in!")])
+  return _c(
+    "div",
+    { staticClass: "container" },
+    [
+      _c(
+        "bm-button",
+        {
+          nativeOn: {
+            click: function($event) {
+              $event.preventDefault()
+              return _vm.funkyTime()
+            }
+          }
+        },
+        [_vm._v("Slotted in")]
+      ),
+      _vm._v(" "),
+      _vm.funky
+        ? _c(
+            "bm-button",
+            {
+              nativeOn: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.funkyTime()
+                }
+              }
+            },
+            [_vm._v("Toggle On")]
+          )
+        : _vm._e()
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
