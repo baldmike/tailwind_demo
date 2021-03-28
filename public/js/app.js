@@ -19754,20 +19754,22 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "container" },
+    { staticClass: "w-20 border-black" },
     [
-      _c(
-        "bm-button",
-        {
-          nativeOn: {
-            click: function($event) {
-              $event.preventDefault()
-              return _vm.funkyTime()
-            }
-          }
-        },
-        [_vm._v("Slotted in")]
-      ),
+      !_vm.funky
+        ? _c(
+            "bm-button",
+            {
+              nativeOn: {
+                click: function($event) {
+                  $event.preventDefault()
+                  return _vm.funkyTime()
+                }
+              }
+            },
+            [_vm._v("Toggle Off")]
+          )
+        : _vm._e(),
       _vm._v(" "),
       _vm.funky
         ? _c(

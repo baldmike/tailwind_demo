@@ -1,6 +1,6 @@
 <template>
-    <div class="container">
-        <bm-button @click.native.prevent="funkyTime()">Slotted in</bm-button>
+    <div class="w-20 border-black">
+        <bm-button v-if="!funky" @click.native.prevent="funkyTime()">Toggle Off</bm-button>
 
         <bm-button v-if="funky" @click.native.prevent="funkyTime()">Toggle On</bm-button>
     </div>
