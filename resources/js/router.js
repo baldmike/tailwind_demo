@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import mainApp from './mainApp'
+import HomeComponent from './pages/HomeComponent.vue'
 
 export const router = new VueRouter({ 
     mode: 'history', 
@@ -10,12 +11,12 @@ export const router = new VueRouter({
             path: '/', 
             component: mainApp,
     
-            // children: [
-            //     {
-            //         path: '',
-            //         components: {body: ShopComponent, header: HeaderComponent},
-            //     },
-            // ]
+            children: [
+                {
+                    path: '',
+                    component: HomeComponent,
+                },
+            ]
         },
     ]
 })
