@@ -65,8 +65,9 @@ export default {
 
             let self = this;
             setTimeout(function(){ 
-                self.disableButton = false; 
-            }, 3000);
+                self.disableButton = false;
+                self.loading = false; 
+            }, 4000);
         },
         stopLoading() {
             this.loading = false;

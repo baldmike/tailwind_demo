@@ -1910,7 +1910,8 @@ __webpack_require__.r(__webpack_exports__);
       var self = this;
       setTimeout(function () {
         self.disableButton = false;
-      }, 3000);
+        self.loading = false;
+      }, 4000);
     },
     stopLoading: function stopLoading() {
       this.loading = false;
