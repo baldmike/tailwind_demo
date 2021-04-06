@@ -1909,8 +1909,7 @@ __webpack_require__.r(__webpack_exports__);
       this.disableButton = true;
       var self = this;
       setTimeout(function () {
-        self.disableButton = false;
-        self.loading = false;
+        self.stopLoading();
       }, 4000);
     },
     stopLoading: function stopLoading() {
