@@ -1,8 +1,6 @@
 <template>
-    <div class="w-20 border-black">
-        <bm-button v-if="!funky" @click.native.prevent="funkyTime()">Toggle Off</bm-button>
-
-        <bm-button v-if="funky" @click.native.prevent="funkyTime()">Toggle On</bm-button>
+    <div>
+        <bm-button v-if="!toggleOn" @click="submit" ref="submitButton">Toggle</bm-button>
     </div>
 </template>
 
@@ -15,14 +13,19 @@
         }, 
         data() {
             return {
-                funky: false,
+                toggleOn: false,
             }
         },
 
         methods: {
-            funkyTime() {
-                this.funky = !this.funky;
-                console.log(this.funky);
+            toggleButton() {
+                this.toggleOn = !this.toggleOn;
+                console.log(this.toggleOn);
+            },
+            submit() {
+                //calling the startLoading method of the button, which enables the button to loading state
+                console.log("submit--->>>");
+                this.$refs.submitButton.startLoading();
             }
         }
 }
