@@ -2109,6 +2109,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
@@ -2116,7 +2123,9 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      toggleOn: false
+      toggleOn: true,
+      showSubmit: true,
+      submitted: false
     };
   },
   methods: {
@@ -2126,8 +2135,12 @@ __webpack_require__.r(__webpack_exports__);
     },
     submit: function submit() {
       //calling the startLoading method of the button, which enables the button to loading state
-      console.log("submit--->>>");
       this.$refs.submitButton.startLoading();
+      this.submitted = !this.submitted;
+    },
+    doStuff: function doStuff() {
+      this.showSubmit = !this.showSubmit;
+      this.toggleButton();
     }
   }
 });
@@ -19962,9 +19975,31 @@ var render = function() {
   return _c(
     "div",
     [
-      !_vm.toggleOn
+      _vm.showSubmit
         ? _c("bm-button", { ref: "submitButton", on: { click: _vm.submit } }, [
-            _vm._v("Toggle")
+            _vm._v("Submit")
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.showSubmit
+        ? _c("bm-button", { ref: "submitButton", on: { click: _vm.submit } }, [
+            _vm._v("Submit")
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.submitted
+        ? _c("bm-button", { on: { click: _vm.doStuff } }, [_vm._v("Submitted")])
+        : _vm._e(),
+      _vm._v(" "),
+      _vm.toggleOn
+        ? _c("bm-button", { on: { click: _vm.toggleButton } }, [
+            _vm._v("Toggle On")
+          ])
+        : _vm._e(),
+      _vm._v(" "),
+      !_vm.toggleOn
+        ? _c("bm-button", { on: { click: _vm.toggleButton } }, [
+            _vm._v("Toggle Off")
           ])
         : _vm._e()
     ],

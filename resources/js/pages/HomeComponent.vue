@@ -1,6 +1,13 @@
 <template>
     <div>
-        <bm-button v-if="!toggleOn" @click="submit" ref="submitButton">Toggle</bm-button>
+        <bm-button v-if="showSubmit" @click="submit" ref="submitButton">Submit</bm-button>
+
+        <bm-button v-if="!showSubmit" @click="submit" ref="submitButton">Submit</bm-button>
+
+        <bm-button v-if="submitted" @click="doStuff">Submitted</bm-button>
+
+        <bm-button v-if="toggleOn" @click="toggleButton">Toggle On</bm-button>
+        <bm-button v-if="!toggleOn" @click="toggleButton">Toggle Off</bm-button>
     </div>
 </template>
 
@@ -13,7 +20,9 @@
         }, 
         data() {
             return {
-                toggleOn: false,
+                toggleOn: true,
+                showSubmit: true,
+                submitted: false,
             }
         },
 
@@ -24,8 +33,13 @@
             },
             submit() {
                 //calling the startLoading method of the button, which enables the button to loading state
-                console.log("submit--->>>");
                 this.$refs.submitButton.startLoading();
+                this.submitted = !this.submitted;
+            },
+
+            doStuff() {
+                this.showSubmit = !this.showSubmit;
+                this.toggleButton();
             }
         }
 }
